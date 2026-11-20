@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of a young software developer passionate about web development, JavaScript, and robotics.">
+  <title>MUHAMAD ABDUL ROZAK | Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="background-glow"></div>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">ROZAK<span>DEV.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact" class="nav-contact">Let's Talk ↗</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-content reveal">
+        <div class="status">
+          <span class="status-dot"></span>
+          AVAILABLE FOR LEARNING & COLLABORATION
+        </div>
+
+        <p class="eyebrow">HELLO MY NAME IS</p>
+        <h1>MUHAMAD<br><span class="gradient-text">ABDUL ROZAK</span></h1>
+
+        <h2 class="hero-role">
+          I'm a <span id="typing"></span><span class="cursor">|</span>
+        </h2>
+
+        <p class="hero-description">
+          A young developer passionate about building digital
+          experiences, exploring technology, and turning creative
+          ideas into reality through code.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore My Work ↗</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="hero-socials">
+          <span>BASED IN INDONESIA</span>
+          <span class="social-line"></span>
+          <span>CREATIVE MIND. DEVELOPER HEART.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="profile-top">
+            <span>PROFILE_001</span>
+            <span class="live-dot"></span>
+          </div>
+
+          <div class="profile-image">
+            <!-- Ganti foto.jpg dengan foto kamu -->
+            <img src="assets/foto.jpg" alt="Developer profile photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+            <div class="photo-placeholder">YOUR<br>PHOTO</div>
+          </div>
+
+          <div class="profile-info">
+            <h3>MUHAMAD ABDUL ROZAK</h3>
+            <p>Junior Software Developer</p>
+          </div>
+
+          <div class="profile-bottom">
+            <span>CREATIVE</span>
+            <span>● DEVELOPER</span>
+          </div>
+        </div>
+
+        <div class="floating-code code-one">
+          <span>01</span> console.log("Hello!");
+        </div>
+        <div class="floating-code code-two">
+          &lt;/&gt; JavaScript
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <span class="section-label">01 / ABOUT ME</span>
+        <h2>Not just coding.<br><span class="gradient-text">Creating possibilities.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hello! I'm <strong>MUHAMAD ABDUL ROZAK</strong>, a 14-year-old
+            aspiring software developer from Indonesia.
+          </p>
+          <p>
+            I started my coding journey at the age of 12.
+            Since then, I've been exploring the world of programming,
+            creating websites, experimenting with Arduino robotics,
+            and developing creative digital projects.
+          </p>
+          <p>
+            I'm currently a ninth-grade student at SMPN 1 Talun.
+            I believe that age is not a limitation to learning,
+            building, and creating something meaningful.
+          </p>
+          <p>
+            My goal is to keep improving my skills and become
+            a professional software developer in the future.
+          </p>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <h3>02<span>+</span></h3>
+            <p>Years of Learning</p>
+          </div>
+          <div class="stat-card">
+            <h3>04</h3>
+            <p>Featured Projects</p>
+          </div>
+          <div class="stat-card">
+            <h3>14</h3>
+            <p>Years Old</p>
+          </div>
+          <div class="stat-card">
+            <h3>∞</h3>
+            <p>Curiosity to Learn</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section container" id="skills">
+      <div class="section-heading reveal">
+        <span class="section-label">02 / MY SKILLS</span>
+        <h2>Tools I use to<br><span class="gradient-text">bring ideas to life.</span></h2>
+        <p>Technologies and tools I have explored during my learning journey.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon"></div>
+          <h3>HTML</h3>
+          <p>Web Structure</p>
+          <span class="skill-tag">Web Development</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"></div>
+          <h3>CSS</h3>
+          <p>Web Styling</p>
+          <span class="skill-tag">Web Development</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"></div>
+          <h3>JavaScript</h3>
+          <p>Web Interactivity</p>
+          <span class="skill-tag">Programming</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"></div>
+          <h3>Arduino</h3>
+          <p>Robotics Projects</p>
+          <span class="skill-tag">Hardware</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"></div>
+          <h3>Scratch</h3>
+          <p>Visual Programming</p>
+          <span class="skill-tag">Programming</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"></div>
+          <h3>VS Code</h3>
+          <p>Code Editor</p>
+          <span class="skill-tag">Development Tool</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-label">03 / SELECTED WORKS</span>
+        <h2>Things I've <span class="gradient-text">built.</span></h2>
+        <p>A collection of projects I've worked on during my coding journey.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-preview news-preview">
+            <div class="mock-browser">
+              <div class="browser-dots">● ● ●</div>
+              <div class="mock-news">
+                <span>DAILY NEWS</span>
+                <div class="mock-news-line"></div>
+                <div class="mock-news-block"></div>
+              </div>
+            </div>
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-content">
+            <span class="project-category">WEB DEVELOPMENT</span>
+            <h3>News Website</h3>
+            <p>
+              A news website project developed using JavaScript.
+              Built as an exploration of web development with
+              Visual Studio Code and AI assistance.
+            </p>
+            <div class="tech-stack">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+            <a href="#contact" class="project-link">Project Details ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview robot-preview">
+            <div class="robot-illustration"></div>
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-content">
+            <span class="project-category">ROBOTICS & HARDWARE</span>
+            <h3>Arduino Robot</h3>
+            <p>
+              An experimental robotics project using Arduino,
+              combining programming, electronics, and creative
+              problem-solving.
+            </p>
+            <div class="tech-stack">
+              <span>Arduino</span><span>Electronics</span>
+            </div>
+            <a href="#contact" class="project-link">Project Details ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview scratch-preview">
+            <div class="scratch-blocks">
+              <span>when clicked</span>
+              <span>move 10 steps</span>
+              <span>say Hello!</span>
+            </div>
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-content">
+            <span class="project-category">COMPETITION</span>
+            <h3>Scratch Competition</h3>
+            <p>
+              Participated in a Scratch programming competition
+              at the Cirebon Regency level, gaining experience
+              in creative and logical thinking.
+            </p>
+            <div class="tech-stack">
+              <span>Scratch</span><span>Visual Programming</span>
+            </div>
+            <a href="#journey" class="project-link">My Experience ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview wedding-preview">
+            <div class="wedding-design">
+              <span>THE WEDDING OF</span>
+              <strong>A & B</strong>
+              <small>YOU ARE INVITED</small>
+            </div>
+            <span class="project-number">04</span>
+          </div>
+          <div class="project-content">
+            <span class="project-category">WEB DEVELOPMENT</span>
+            <h3>Digital Wedding Invitation</h3>
+            <p>
+              A digital wedding invitation website designed
+              to present wedding information in a modern
+              and interactive format.
+            </p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="#contact" class="project-link">Project Details ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section container" id="journey">
+      <div class="section-heading reveal">
+        <span class="section-label">04 / MY JOURNEY</span>
+        <h2>Every expert was once<br><span class="gradient-text">a beginner.</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">AGE 12</span>
+          <h3>The Beginning</h3>
+          <p>Started exploring programming and discovering the world of coding.</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">LEARNING JOURNEY</span>
+          <h3>First Web Projects</h3>
+          <p>Started building websites using HTML, CSS, JavaScript, and VS Code.</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">COMPETITION EXPERIENCE</span>
+          <h3>Scratch Competition</h3>
+          <p>Participated in a Scratch competition at the Cirebon Regency level.</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">PRESENT · AGE 14</span>
+          <h3>Keep Building & Learning</h3>
+          <p>Currently studying at SMPN 1 Talun, developing projects, and improving programming skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+      <div class="contact-card reveal">
+        <span class="section-label">05 / GET IN TOUCH</span>
+        <h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2>
+        <p>
+          I'm always excited to learn new things, explore technology,
+          and connect with other creative minds.
+        </p>
+        <a href="oziherlambang86@gmail.com" class="btn btn-primary">
+          Send Me an Email ↗
+        </a>
+        <p class="contact-note">Let's create something meaningful together.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">ROZAK<span>DEV.</span></a>
+      <p>Designed & built with curiosity and code.</p>
+      <span>© <span id="year"></span> MUHAMAD ABDUL ROZAK</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
